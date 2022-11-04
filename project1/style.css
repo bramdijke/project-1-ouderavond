@@ -362,6 +362,8 @@ footer {
 .images-software {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
+
 }
 
 table,
@@ -383,3 +385,48 @@ thead {
 .apptext1 {
   margin-top: 3vh;
 }
+
+@media screen and (max-width: 768px){
+  ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dropdown-content {
+    justify-content: center;
+    position:relative;
+    border-top: 0.2em solid #ffffff;
+
+  }
+
+  .dropdown-content a {
+    text-align: center;
+  }
+
+  .studenthead {
+    display: block;
+  }
+
+  .studenthead img {
+    width: 50vw;
+    height: auto;
+    margin: auto;
+    margin-bottom: 2vh;
+  }
+
+  .footerimage {
+    display: none;
+  }
+
+  .appimage-text img {
+    display: none;
+  }
+
+  .button1 {
+    width: 100%;
+  }
+
+
+}
+
